@@ -11,7 +11,7 @@ RUN echo 'cd /root' >>/tinyweb.sh
 RUN echo "su root -l -c 'vncserver :2000 ' "  >>/tinyweb.sh
 RUN echo 'cd /noVNC-1.2.0' >>/tinyweb.sh
 RUN echo './utils/launch.sh  --vnc localhost:7900 --listen 80 ' >>/tinyweb.sh
-RUN echo root:laoluoshushu|chpasswd
+RUN echo root:P@ssw0rd|chpasswd
 RUN chmod 755 /tinyweb.sh
 EXPOSE 80
 CMD  /tinyweb.sh
